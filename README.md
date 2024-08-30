@@ -9,5 +9,5 @@ Product images on online marketplaces often contain digitally added texts and ov
 
 [[Project page](https://hiyaroy12.github.io/ecomm-img-text-removal/)]
 
-<img src="img.pdf" width="800">
+<img src="img.png" width="800">
 
