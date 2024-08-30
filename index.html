@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<h1 style="font-family: Arial, Helvetica, sans-serif; text-align: center; margin-top: 50px; color: black; ">
+  <!-- color: navy; -->
+  Text Removal In E-Commerce Images: A Comparison Of Inpainting Methods
+</h1>
+<p style="font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: 24px; color: black; margin-bottom: 20px; font-weight: bold;">
+  Hiya Roy, Bjorn Stenger
+</p>
+
+<p style="font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: 22px; color: black; font-weight: bold; margin-bottom: 40px">
+  BMVC 2024
+</p>
+
+<!-- Icons-->
+<style>
+  .dynamic-icon {
+      width: 70px; /* Increased size */
+      height: 70px; /* Increased size */
+      transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .dynamic-icon:hover {
+      transform: scale(1.2);
+      filter: brightness(1.2);
+  }
+
+  h4 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+  }
+
+  p {
+      margin: 0;
+      font-size: 14px;
+  }
+
+  a {
+      text-decoration: none;
+      color: black;
+  }
+
+  a:hover {
+      color: grey;
+  }
+</style>
+
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px; max-width: 800px; margin: 0 auto; margin-bottom: 60px;">
+  <div style="text-align: center;">
+      <img src="img/paper-icon.png" alt="Paper Icon" class="dynamic-icon">
+      <h4 style="margin: 10px 0 5px; font-size: 20px;">Paper</h4>
+      <p style="margin: 0;"><a href="your-paper-link.pdf" style="text-decoration: none; color: black; font-size: 18px;">Download pdf</a></p>
+  </div>
+  <div style="text-align: center;">
+      <img src="img/code-icon.png" alt="Code Icon" class="dynamic-icon">
+      <h4 style="margin: 10px 0 5px; font-size: 20px;">Code</h4>
+      <p style="margin: 0;"><a href="your-code-link" style="text-decoration: none; color: black; font-size: 18px;">Checkout the code</a></p>
+  </div>
+  <div style="text-align: center;">
+      <img src="img/dataset-icon.png" alt="Dataset Icon" class="dynamic-icon">
+      <h4 style="margin: 10px 0 5px; font-size: 20px;">Dataset</h4>
+      <p style="margin: 0;"><a href="your-dataset-link" style="text-decoration: none; color: black; font-size: 18px;">Explore the dataset</a></p>
+  </div>
+  <div style="text-align: center;">
+      <img src="img/bibtex-icon.png" alt="BibTex Icon" class="dynamic-icon">
+      <h4 style="margin: 10px 0 5px; font-size: 20px;">BibTex</h4>
+      <p style="margin: 0;"><a href="your-bibtex-link.bib" style="text-decoration: none; color: black; font-size: 18px;">Cite the paper</a></p>
+  </div>
+</div>
+
+<!-- Images-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto;
+            width: 70%;
+        }
+
+        .image-box {
+            position: relative;
+            width: 30%; /* Adjust width as needed */
+            border: 2px solid #000; /* Tight outline */
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-box .output-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-box:hover .output-image {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <div class="image-box">
+        <img src="img/input1.png" alt="Input Image 1">
+        <img src="img/output1.png" alt="Output Image 1" class="output-image">
+    </div>
+    <div class="image-box">
+        <img src="img/input2.png" alt="Input Image 2">
+        <img src="img/output2.png" alt="Output Image 2" class="output-image">
+    </div>
+    <div class="image-box">
+        <img src="img/input3.png" alt="Input Image 3">
+        <img src="img/output3.png" alt="Output Image 3" class="output-image">
+    </div>
+</div>
+
+</body>
+
+
+<!-- Abstract-->
+<div style="margin: 50px auto; width: 70%; line-height: 1.8; font-family: 'Verdana', Geneva, sans-serif; text-align: justify; font-size: 38px;">
+<h3 style="font-family: 'Arial', sans-serif; text-align: center; font-size: 25px; font-weight: bold; margin-bottom: 15px;">Abstract</h3>
+  <p>
+    Product images on online marketplaces often contain digitally added texts and overlays, hindering their usability for various e-commerce applications. 
+    By removing these digital elements, images can be utilized for tasks such as advertisement retargeting. 
+    This paper provides an overview of existing inpainting and text removal algorithms, along with a discussion of relevant datasets. 
+    We investigate different mask-creation strategies to employ inpainting for the text removal task and show that these have a significant impact on performance. 
+    We conduct a thorough analysis of inpainting algorithms with evaluations on the public SCUT-EnsText dataset as well as a new e-commerce product dataset. 
+    We show that with appropriate mask definitions, inpainting with Fourier convolution networks can outperform more recent diffusion-based methods both in terms of speed and accuracy. 
+    This study represents the first comprehensive survey to discuss the suitability of inpainting methods within the context of e-commerce applications. 
+    The code and dataset will be available at <a href="https://www.google.com/" style="color: blue; text-decoration: underline;">this https URL</a>.
+  </p>
+</div>
+
+<!-- Citation Row -->
+  <!-- <section class="showcase">
+    <div class="container">
+      <div class="row myrow" style="padding-bottom: 100px;">
+        <div class="offset-md-0 col-md-12">
+          <h2 style="margin-left: 0%; text-align: center;">Citation</h2>
+          <div style="font-weight: normal; font-size: 16pt; background-color: #F0F0F0; padding: 10px; border-radius: 5px; margin-top: 20px;">
+            <tt>
+            @article{roy2024inpainting, <br>
+              <div style="margin-left: 5%; font-size: 16pt; font-weight: normal;">
+              title={Text Removal In E-Commerce Images: A Comparison Of Inpainting Methods}, <br>
+              author={Roy, H., Stenger}, <br>
+              conference={BMVC}, <br>
+              year={2024} <br>
+              </div>
+            }
+            </tt>
+          </div>
+        </div>
+      </div>
+      <p style="font-weight: normal; font-size: 16pt; text-align: center; margin-top: 20px;">Copyright © 2024</p>
+    </div>
+</section> -->
+<br>
+  <p style="font-weight:normal; font-size: 12pt; text-align:center">Copyright © 2024</p>
+<br>
+        
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
